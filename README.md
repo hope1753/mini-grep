@@ -29,8 +29,9 @@ Compile the source file using `gcc`:
 
 ```bash
 gcc -o mini_grep main.c
-
-Example
+```
+## Example
+```
 ./main -n -c than poem.txt
 1. Things to be thankful for
 10. Are things we should be thankful for...
