@@ -32,7 +32,7 @@ gcc -o mini_grep main.c
 ```
 ## Example
 ```
-<kbd> ./main -n -c than poem.txt</kbd>
+$ ./main -n -c than poem.txt
 1. Things to be thankful for
 10. Are things we should be thankful for...
 11. And most of all our thankful prayers
