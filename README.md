@@ -29,3 +29,27 @@ Compile the source file using `gcc`:
 
 ```bash
 gcc -o mini_grep main.c
+
+Example
+./main -n -c than poem.txt
+1. Things to be thankful for
+10. Are things we should be thankful for...
+11. And most of all our thankful prayers
+Found : 3
+
+./main -n -c than poem.txt
+1. Things to be thankful for
+10. Are things we should be thankful for...
+11. And most of all our thankful prayers
+Found : 3
+PS C:\mini-grep> ./main -n -v -c than poem.txt
+2                              - Helen Steiner Rice
+3The good, green earth beneath our feet,
+4The air we breath, the food we eat,
+5Some work to do, a goal to win,
+6A hidden longing deep within
+7That spurs us on to bigger things
+8And helps us meet what each day brings
+9All these things and many more
+12Should rise to God because He cares.
+Found : 9
