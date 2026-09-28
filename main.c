@@ -88,7 +88,7 @@
             }
         }
         if (options.count) {
-            printf("Found : %d\n", found);
+            printf("\nFound : %d\n", found);
         }
 
         fclose(fp);
