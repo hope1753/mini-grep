@@ -72,16 +72,23 @@
         }
         while (fgets(line, sizeof(line), fp) != NULL) {
             lineno++;
-            if (strstr(line, pattern) && options.invert != 1) {
-                found++;
-                if (options.number == 1) {
-                    printf("%ld. ", lineno);
-                }
-                printf("%s", line);
-            }
-            if (!strstr(line, pattern) && options.invert == 1) {
-                found++;
-                if (options.number == 1) {
+            // if (strstr(line, pattern) && options.invert != 1) {
+            //     found++;
+            //     if (options.number == 1) {
+            //         printf("%ld. ", lineno);
+            //     }
+            //     printf("%s", line);
+            // }
+            // if (!strstr(line, pattern) && options.invert == 1) {
+            //     found++;
+            //     if (options.number == 1) {
+            //         printf("%ld", lineno);
+            //     }
+            //     printf("%s", line);
+            // }
+            int is_found = (strstr(line, pattern) != NULL);
+            if (is_found != options.invert) {
+                if (options.number) {
                     printf("%ld", lineno);
                 }
                 printf("%s", line);
